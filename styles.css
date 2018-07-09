@@ -322,6 +322,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
 }
 .commons_content .home_landing .home_landing_inner h1 {
   text-transform: uppercase;
@@ -1000,10 +1001,32 @@ img {
   }
 }
 @media only screen and (max-width: 980px) {
+  .commons_content .home_landing .home_landing_inner .yves_border {
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .commons_content .home_landing {
+    height: calc(150vh);
+  }
+
   .commons_content .home_landing .home_landing_inner {
     position: static;
     top: auto;
     left: auto;
+  }
+
+  .commons_content .home_main .section1,
+.commons_content .home_main .section2 {
+    max-width: 1200px;
+    position: relative;
+    min-height: auto;
+    margin-bottom: 60px !important;
+    position: relative;
+  }
+
+  .commons_content .home_main .home_main_section.section3 {
+    margin-top: 80px;
   }
 
   .commons_content .home_main .section1 .section1_bkg,
@@ -1013,6 +1036,10 @@ img {
     left: 0;
     right: 0;
     text-align: center;
+  }
+  .commons_content .home_main .section1 .section1_bkg img,
+.commons_content .home_main .section2 .section2_bkg img {
+    display: none;
   }
 
   .commons_content .home_main .section1 .section1_inner,
@@ -1070,6 +1097,10 @@ img {
     width: auto;
   }
 
+  .home_main_section_floatting_text {
+    display: none;
+  }
+
   .commons_content .home_main .home_main_section .home_main_section_title {
     font-size: 24px;
     margin-bottom: 24px;
@@ -1084,6 +1115,10 @@ img {
   }
 }
 @media only screen and (max-width: 540px) {
+  .commons_content .home_landing {
+    height: calc(100vh);
+  }
+
   .commons_content .commons_footer .commons_footer_block {
     /* margin-right: 4%; */
     float: none;
@@ -1105,11 +1140,28 @@ img {
     cursor: pointer;
     clear: both;
     margin: 0;
+    text-align: center;
   }
 
   .commons_content .commons_footer .commons_footer_block_right .logo_gree {
     margin-top: 24px;
     margin-left: 0;
+  }
+
+  .commons_content .home_main .section2 {
+    max-width: 1200px;
+    position: relative;
+    min-height: auto;
+    margin-bottom: 48px !important;
+    position: relative;
+    /* overflow: hidden; */
+  }
+
+  .commons_content .home_main .section1 {
+    max-width: 1400px;
+    position: relative;
+    min-height: auto;
+    margin-bottom: 48px !important;
   }
 }
 

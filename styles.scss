@@ -1262,8 +1262,12 @@ and (max-width : 1200px)
 and (max-width : 980px) 
 {
 	.commons_content .home_landing .home_landing_inner .yves_border {
-    position: relative;
-    margin-bottom: 48px;
+		position: relative;
+		margin-bottom: 48px;
+	}
+	.commons_content .home_landing {
+    height: calc(150vh);
+
 }
 	.commons_content .home_landing .home_landing_inner 
 	{
@@ -1271,6 +1275,20 @@ and (max-width : 980px)
 		top:		auto; 
 		left:		auto; 
 	}
+	.commons_content .home_main .section1, 
+	.commons_content .home_main .section2 {
+		max-width: 1200px;
+		position: relative;
+		min-height: auto;
+		margin-bottom: 60px !important;
+		position: relative;
+	}
+	.commons_content .home_main .home_main_section.section3 
+	{
+		margin-top: 80px;
+	}
+	
+
 	.commons_content .home_main .section1 .section1_bkg,
 	.commons_content .home_main .section2 .section2_bkg
 	{
@@ -1279,6 +1297,10 @@ and (max-width : 980px)
 		left: 0;
 		right: 0;
 		text-align: center;
+		img
+		{
+			display: none;
+		}
 	}
 	.commons_content .home_main .section1 .section1_inner,
 	.commons_content .home_main .section2 .section2_inner 
@@ -1338,6 +1360,10 @@ and (max-width : 780px)
         float:               none;
         width:               auto;
     }
+	.home_main_section_floatting_text
+	{
+		display: none;
+	}
 	.commons_content .home_main .home_main_section .home_main_section_title
 	{
 		font-size: 24px;
@@ -1360,6 +1386,10 @@ and (max-width : 780px)
 @media only screen
 and (max-width : 540px) 
 {
+		.commons_content .home_landing {
+    height: calc(100vh);
+
+}
 	.commons_content .commons_footer .commons_footer_block {
 		/* margin-right: 4%; */
 		float: none;
@@ -1385,4 +1415,18 @@ and (max-width : 540px)
 		margin-top: 24px;
 		margin-left: 0;
 	}
+	.commons_content .home_main .section2 {
+		max-width: 1200px;
+		position: relative;
+		min-height: auto;
+		margin-bottom: 48px !important;
+		position: relative;
+		/* overflow: hidden; */
+	}
+	.commons_content .home_main .section1 {
+    max-width: 1400px;
+    position: relative;
+    min-height: auto;
+    margin-bottom: 48px !important;
+}
 }
