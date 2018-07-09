@@ -372,6 +372,7 @@ img
 			-webkit-align-items:		center;
 			-ms-flex-align:				center;
 			align-items:				center;	
+			text-align:					center;
 
 			h1
 			{
@@ -1177,18 +1178,18 @@ and (max-width : 1200px)
 	}
 	.commons_content .home_main .section_block 
 	{
-		max-width: 90%;
-		margin: 0 auto;
-		margin-bottom: 60px;
+		max-width:		90%;
+		margin:			0 auto;
+		margin-bottom:	60px;
 	}
-	
+
 	.commons_content .home_main .home_main_section_block .home_main_section_block_infos_text .home_main_section_block_infos_text_special span 
 	{
 		text-align: left;
 	}
 	.commons_content .home_main .home_main_section_block .home_main_section_block_infos_text .home_main_section_block_infos_text_special 
 	{
-		float: none;
+		float:		none;
 		text-align: left;
 	}
 	.commons_content .home_main .home_main_section_block .home_main_section_block_infos_text .home_main_section_block_infos_text_price 
@@ -1233,8 +1234,26 @@ and (max-width : 1200px)
 		margin-top: 24px;
 	}
 	.commons_content .commons_footer .commons_footer_block {
-    margin-right: 48px;
-}
+		margin-right: 48px;
+	}
+	.commons_content .commons_footer .commons_footer_block {
+		/* margin-right: 4%; */
+		float: left;
+		width: 45%;
+		/* margin-bottom: 36px; */
+		margin: 2.5% 0 2.5% 24px;
+		text-align: center;
+	}
+	.commons_content .commons_afterfooter .commons_afterfooter_left {
+		float: none;
+		width: auto;
+		margin-bottom: 6px;
+	}
+	.commons_content .commons_afterfooter .commons_afterfooter_right {
+		text-align: left;
+		float: none;
+		width: auto;
+	}
 }
 
 
@@ -1242,6 +1261,10 @@ and (max-width : 1200px)
 @media only screen
 and (max-width : 980px) 
 {
+	.commons_content .home_landing .home_landing_inner .yves_border {
+    position: relative;
+    margin-bottom: 48px;
+}
 	.commons_content .home_landing .home_landing_inner 
 	{
 		position:	static;
@@ -1304,7 +1327,7 @@ and (max-width : 980px)
 		float: none;
 		text-align: left;
 	}
-	
+
 }
 
 @media only screen
@@ -1333,3 +1356,33 @@ and (max-width : 780px)
 
 
 
+
+@media only screen
+and (max-width : 540px) 
+{
+	.commons_content .commons_footer .commons_footer_block {
+		/* margin-right: 4%; */
+		float: none;
+		width: 100%;
+		/* margin-bottom: 36px; */
+		margin: 0 auto 24px auto;
+		text-align: center;
+	}
+	.commons_content .commons_footer .commons_footer_block_right .commons_footer_block_logo {
+		display: inline-block;
+		width: 45%;
+		cursor: pointer;
+	}
+	.commons_content .commons_footer .commons_footer_block_right .commons_footer_block_logo {
+		display: block;
+		width: 100%;
+		cursor: pointer;
+		clear: both;
+		margin: 0;
+		text-align: center;
+	}
+	.commons_content .commons_footer .commons_footer_block_right .logo_gree {
+		margin-top: 24px;
+		margin-left: 0;
+	}
+}
