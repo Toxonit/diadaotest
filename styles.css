@@ -774,7 +774,7 @@ img {
             font-family: 'roboto';
             font-weight: 300; }
             .commons_content .home_main .home_main_section_block .home_main_section_block_infos .home_main_section_block_infos_top .home_main_section_block_infos_special .divspan {
-              float: none;
+              float: left;
               display: inline-block;
               width: 50%;
               padding-left: 12px;
@@ -1106,7 +1106,13 @@ img {
     text-align: left;
     float: none;
     width: auto; } }
+@media only screen and (max-width: 1024px) {
+  .commons_content .home_main .section1 {
+    min-height: 50vh; } }
 @media only screen and (max-width: 980px) {
+  .home_landing_bottom {
+    display: none; }
+
   .commons_content .home_landing .home_landing_inner .yves_border {
     position: relative;
     margin-bottom: 48px; }

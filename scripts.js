@@ -14,13 +14,21 @@ jQuery(document).ready(function ()
 //	}).setPin("#my-sticky-element") // pins the element for the the scene's duration
 //			.addTo(controller); // assign the scene to the controller
 
-setTimeout(function(){ $('.preloading').addClass('getOut'); }, 2000);
+	setTimeout(function ()
+	{
+		$('.preloading').addClass('getOut');
+	}, 2000);
 
 
+	// =====================================================
+	// parallax
+	// =====================================================
+	$('.home_landing').parallax({ imageSrc: 'resources/img/Calque_301.jpg' });
 
-$('.home_landing').parallax({imageSrc: 'resources/img/Calque_301.jpg'});
 
-	//Menu mobile
+	// =====================================================
+	// menu mobile
+	// =====================================================
 	$("#menu").mmenu({
 		"extensions": [
 			"fx-menu-zoom",
@@ -28,6 +36,11 @@ $('.home_landing').parallax({imageSrc: 'resources/img/Calque_301.jpg'});
 		]
 	});
 
+
+
+	// =====================================================
+	// Effet au scroll
+	// =====================================================
 	window.sr = new ScrollReveal();
 
 	sr.reveal('.sr_left', {
@@ -67,6 +80,11 @@ $('.home_landing').parallax({imageSrc: 'resources/img/Calque_301.jpg'});
 	});
 
 
+
+
+	// =====================================================
+	//Scroll to
+	// =====================================================
 	// Gestion du header, pour ajouter une classe, permet aussi de basculer le boolean pour activer l'animation du scroll seulement la page en haut
 	var isDone = false;
 	var $header = $('.commons_header');
