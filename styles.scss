@@ -24,6 +24,74 @@ html, body
 .clear{clear: both;}
 
 
+// C'est moche mais je sais pas quoi faire .. :'( 
+.preloading
+{
+	position: fixed;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 10000000;
+	background-image: url('resources/img/accueil.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition:			all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition:	all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+	
+	h1
+	{
+		text-transform: uppercase;
+		font-size: 24px;
+		margin-bottom: 24px;
+		color: #fff;
+		font-family: "brandon_grotesquelight";
+		text-shadow: 1px 1px #000;
+	}
+	
+}
+.loader 
+{
+    border:				8px solid #f9f9f9; 
+    border-top:			8px solid $green;
+    border-radius:		50%;
+    width:				120px;
+    height:				120px;
+    animation:			spin 1.7s linear 1;
+	z-index:			1000000000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+// Pareil pour le faire partir plus d'idée
+.getOut
+{
+	left: 200%;
+	right: -200%;
+	background-position: 80px 0;
+}
+
 .button
 {
 
@@ -33,9 +101,9 @@ a:hover,
 a:active,
 a:visited
 {
-	cursor: pointer;
-	text-transform: none;
-	text-decoration: none;
+	cursor:				pointer;
+	text-transform:		none;
+	text-decoration:	none;
 }
 img
 {
@@ -47,7 +115,13 @@ img
 {
 	box-sizing: border-box;
 }
-.cl-effect a {
+
+
+// =====================================================
+// Effect
+// =====================================================
+.cl-effect a 
+{
 	position:			relative;
 	display:			inline-block;
 	outline:			none;
@@ -152,15 +226,150 @@ img
 }
 
 
+.button--nina {
+	padding: 0 2em;
+	/*background: #7986cb;*/
+	color: #fff;
+	overflow: hidden;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+.button--nina > span {
+	display: inline-block;
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--nina::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1em 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--nina:hover {
+	background-color: #3f51b5;
+}
+.button--nina:hover::before {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.button--nina:hover > span {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.button--nina:hover > span:nth-child(1) {
+	-webkit-transition-delay: 0.045s;
+	transition-delay: 0.045s;
+}
+.button--nina:hover > span:nth-child(2) {
+	-webkit-transition-delay: 0.09s;
+	transition-delay: 0.09s;
+}
+.button--nina:hover > span:nth-child(3) {
+	-webkit-transition-delay: 0.135s;
+	transition-delay: 0.135s;
+}
+.button--nina:hover > span:nth-child(4) {
+	-webkit-transition-delay: 0.18s;
+	transition-delay: 0.18s;
+}
+.button--nina:hover > span:nth-child(5) {
+	-webkit-transition-delay: 0.225s;
+	transition-delay: 0.225s;
+}
+.button--nina:hover > span:nth-child(6) {
+	-webkit-transition-delay: 0.27s;
+	transition-delay: 0.27s;
+}
+.button--nina:hover > span:nth-child(7) {
+	-webkit-transition-delay: 0.315s;
+	transition-delay: 0.315s;
+}
+.button--nina:hover > span:nth-child(8) {
+	-webkit-transition-delay: 0.36s;
+	transition-delay: 0.36s;
+}
+.button--nina:hover > span:nth-child(9) {
+	-webkit-transition-delay: 0.405s;
+	transition-delay: 0.405s;
+}
+.button--nina:hover > span:nth-child(10) {
+	-webkit-transition-delay: 0.495s;
+	transition-delay: 0.495s;
+}
+.button--nina:hover > span:nth-child(11) {
+	-webkit-transition-delay: 0.54s;
+	transition-delay: 0.54s;
+}
+.button--nina:hover > span:nth-child(12) {
+	-webkit-transition-delay: 0.585s;
+	transition-delay: 0.585s;
+}
+.button--nina:hover > span:nth-child(13) {
+	-webkit-transition-delay: 0.63s;
+	transition-delay: 0.63s;
+}
+.button--nina:hover > span:nth-child(14) {
+	-webkit-transition-delay: 0.675s;
+	transition-delay: 0.675s;
+}
+.button--nina:hover > span:nth-child(15) {
+	-webkit-transition-delay: 0.72s;
+	transition-delay: 0.72s;
+}
+.button--nina:hover > span:nth-child(16) {
+	-webkit-transition-delay: 0.765s;
+	transition-delay: 0.765s;
+}
+.button--nina:hover > span:nth-child(17) {
+	-webkit-transition-delay: 0.795s;
+	transition-delay: 0.795s;
+}
+.button--nina:hover > span:nth-child(18) {
+	-webkit-transition-delay: 0.84s;
+	transition-delay: 0.84s;
+}
+.button--nina:hover > span:nth-child(19) {
+	-webkit-transition-delay: 0.885s;
+	transition-delay: 0.885s;
+}
+.button--nina:hover > span:nth-child(20) {
+	-webkit-transition-delay: 0.93s;
+	transition-delay: 0.93s;
+}
+.button--nina:hover > span:nth-child(21) {
+	-webkit-transition-delay: 0.975s;
+	transition-delay: 0.975s;
+}
+.button--nina:hover > span:nth-child(22) {
+	-webkit-transition-delay: 1.02s;
+	transition-delay: 1.02s;
+}
+
 
 .home_main_section_block
 {
 	position: relative;
 }
-
-
-
-
 
 
 .home_main_section_block::before,
@@ -181,8 +390,8 @@ img
 
 .home_main_section_block::before
 {
-    border-top:			1px solid #93A446 ;
-    border-bottom:		1px solid #93A446 ;
+    border-top:			1px solid #93A446;
+    border-bottom:		1px solid #93A446;
     -webkit-transform:	scale(0,1);
     transform:			scale(0,1);
 }
@@ -214,17 +423,13 @@ img
    ********************************************************/
 	.commons_header
 	{
-
-		display:				grid;
-		grid-template-rows:		auto;
-		grid-template-columns:	15% 85%;
-		grid-template-areas:	"logo menu";	
+	
 		position:				fixed;
 		top:					0;
 		left:					0;
 		right:					0;
 		height:					80px;
-		background-color:		#f7f8f0;
+		background-color:		#f7f9f0;
 		z-index:				1000000;			
 
 
@@ -232,8 +437,8 @@ img
 		/****************************Logo****************************/
 		.commons_header_logos
 		{
-			grid-area:	logo;
 			padding:	6px;
+			float: left;
 
 
 			.commons_header_logo_first
@@ -244,14 +449,13 @@ img
 			.commons_header_logo_last
 			{
 				width: 120px;
-
 			}
 		}
 
 		/****************************Menu****************************/
 		.commons_header_menu
 		{
-			grid-area:					menu;
+			float: right;
 			padding:					24px;
 			display:					-ms-flexbox;
 			display:					-webkit-flex;
@@ -308,18 +512,18 @@ img
 					margin-left:		12px;
 					text-transform:		uppercase;
 					font-size:			12px;
-					font-family: 'brandon_grotesquemedium';
+					font-family:		'brandon_grotesquemedium';
 				}
 
 				.bold_link,
 				.green_link
 				{
-					font-family:		'avant_gardedemiregular' !important;
+					font-family:	'avant_gardedemiregular' !important;
 				}
 
 				.green_link
 				{
-					color: #93A446 !important;
+					color:	#93A446 !important;
 				}
 			}
 
@@ -341,11 +545,11 @@ img
 		background:		transparent;
 
 		// pas obligé ..
-		z-index: 10;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 1;
+		z-index:	10;
+		top:		0;
+		left:		0;
+		right:		0;
+		z-index:	1;
 
 
 		.home_landing_inner
@@ -401,8 +605,8 @@ img
 				font-family:				'brandon_grotesquelight';
 				span
 				{
-					display:	block;
-					font-size:	52px;
+					display:		block;
+					font-size:		52px;
 					letter-spacing: 18px;
 				}
 			}
@@ -501,21 +705,21 @@ img
 		}
 		.home_landing_bottom
 		{
-			position: absolute;
-			bottom: 24px;
-			right: 24px;
+			position:	absolute;
+			bottom:		24px;
+			right:		24px;
 
 			span,
 			a:link,
-				a:hover,
-				a:active,
-				a:visited
-				{
+			a:hover,
+			a:active,
+			a:visited
+			{
 				text-transform: uppercase;
-				margin-left: 24px;
-				font-family: "brandon_grotesquelight";
-				text-shadow: 1px 1px #333;
-				color: #fff;
+				margin-left:	24px;
+				font-family:	"brandon_grotesquelight";
+				text-shadow:	1px 1px #333;
+				color:			#fff;
 			}
 		}
 	}
@@ -541,35 +745,26 @@ img
 
 		.home_landing_inner
 		{
-			top: -100%;
-			height: 200;
+			top:	-100%;
 		}
 		.section_inner_text
 		{
 			text-align: right;
 
-
 			.section_inner_text_content
 			{
 				display:	inline-block;
 				text-align: center;
-
 			}
 		}
+		
 		.section1
 		{
 			max-width:			1400px;
 			position:			relative;
 			min-height:			70vh;
 			margin-bottom:		48px !important;
-			/*			max-width:			1400px;
-						background-image:	url("resources/img/Shoot1.jpg");
-						background-size:	contain;
-						background-repeat:	no-repeat;
-						position:			relative;
-						min-height:			70vh;
-						margin-bottom:		48px !important;*/
-
+		
 			.section_inner_text
 			{
 				text-align: right;
@@ -774,7 +969,7 @@ img
 			{
 				z-index:			-10;
 				content:			" ";
-				background-color:	#f7f9f0;
+				background-color:	#fff;
 				top:				-49px;
 				left:				0;
 				right:				0;
@@ -863,10 +1058,12 @@ img
 					background-color:	#93A446;
 					text-align:			center;
 					color:				#fff;
-					padding:			7px 0;
+					padding:			12px 36px;
 					text-transform:		uppercase;
-					font-size:			11px;
-					font-family: 'avant_gardedemiregular';
+					font-size:			12px;
+					font-family:		'brandon_grotesquelight';
+					cursor:				pointer;
+					letter-spacing:		1px;
 				}
 			}
 
@@ -939,6 +1136,7 @@ img
 		.commons_footer_block_left,
 		.commons_footer_block_right
 		{
+			// J'avais fait un grid view mais j'ai trouvé qu'après le fix ie..'
 			display: -ms-flexbox;
 			display: -webkit-flex;
 			display: flex;
@@ -960,13 +1158,13 @@ img
 		}
 		.commons_footer_block_left
 		{
-			grid-area: fmenu;
+			/*grid-area: fmenu;*/
 			width: 75%;
 			float: left;
 		}
 		.commons_footer_block_right
 		{
-			grid-area: flogo;
+			/*grid-area: flogo;*/
 			width: 25%;
 			float: right;
 			text-align: right;
@@ -1023,9 +1221,8 @@ img
 			a:active,
 			a:visited
 			{
-			color: #245590;
+			color: #574318;
 			margin-right: 12px;
-			color: #245590;
 		}
 
 
@@ -1066,9 +1263,6 @@ img
 	}
 }
 
-
-
-
 .burger
 {
 	display:		block;
@@ -1080,6 +1274,7 @@ img
 	position:		relative;
 	float:			left;
 	transition:		all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition:all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 
 }
 .burger:before,
@@ -1090,6 +1285,8 @@ img
 	background-color:	#92996d;
 	height:				2px;
 	transition:			all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition:	all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+
 	position:			relative;
 }
 .burger span
@@ -1266,7 +1463,7 @@ and (max-width : 980px)
 		margin-bottom: 48px;
 	}
 	.commons_content .home_landing {
-    height: calc(150vh);
+    height: 110vh;
 
 }
 	.commons_content .home_landing .home_landing_inner 

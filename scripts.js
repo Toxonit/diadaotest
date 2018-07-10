@@ -14,6 +14,9 @@ jQuery(document).ready(function ()
 //	}).setPin("#my-sticky-element") // pins the element for the the scene's duration
 //			.addTo(controller); // assign the scene to the controller
 
+setTimeout(function(){ $('.preloading').addClass('getOut'); }, 2000);
+
+
 
 $('.home_landing').parallax({imageSrc: 'resources/img/Calque_301.jpg'});
 

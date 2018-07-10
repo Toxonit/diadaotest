@@ -9,31 +9,21 @@ and open the template in the editor.
 		<title>Yves Rocher - La Grée Des Landes® - Eco Hotel Spa Bretagne - 4 Etoiles</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="styles.css" rel="stylesheet" type="text/css"/>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
 		<script src="resources/paralax/parallax.min.js" type="text/javascript"></script>
-
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-
 		<script src="resources/jquery.malihu.PageScroll2id.min.js" type="text/javascript"></script>
-
-
-		<!-- Include jQuery.mmenu .css files -->
-		<link href="resources/mmenu/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
-		<!-- Include jQuery and the jQuery.mmenu .js files -->
 		<script src="resources/mmenu/jquery.mmenu.all.js" type="text/javascript"></script>
-
 		<script src="scripts.js" type="text/javascript"></script>
-
-
-
-
+		<link href="styles.css" rel="stylesheet" type="text/css"/>
+		<link href="resources/mmenu/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
+		<div class="preloading">
+			<h1>Chargement ...</h1>
+			<div class="loader"></div>
+
+		</div>
 		<div class="commons_content">
 			<!----------------------------------------Header---------------------------------------->
 			<div class="commons_header">
@@ -57,7 +47,8 @@ and open the template in the editor.
 						<nav id="menu">
 							<ul>
 
-								<li><a href="#">Home</a></li>
+								<li><a href="#"><img src="resources/img/logo_home.png" alt=""/> Accueil</a></li>
+
 								<li><a href="#">Eco hotel</a></li>
 								<li><a href="#">Restaurant bio</a></li>
 								<li><a href="#">Spa Yves Rocher</a></li>
@@ -71,7 +62,7 @@ and open the template in the editor.
 
 					</div>
 					<div class="commons_header_menu_classic classic">
-						<div  class="cl-effect"><a href="#" data-hover="Home">Home</a></div>
+						<div  class="cl-effect"><a href="#" data-hover="Home"><img src="resources/img/logo_home.png" alt=""/></a></div>
 						<div  class="cl-effect"><a href="#" data-hover="Eco hotel">Eco hotel</a></div>
 						<div  class="cl-effect"><a href="#" data-hover="Restaurant bio">Restaurant bio</a></div>
 						<div  class="cl-effect"><a href="#" data-hover="Spa Yves Rocher">Spa Yves Rocher</a></div>
@@ -101,7 +92,7 @@ and open the template in the editor.
 					<div class="home_landing_inner_button home_button sr_left_super_late btn btn-1 btn-1b"><a id="scrollToButton" href="#ContentZone">Découvrir</a></div>
 				</div>
 				<div class="home_landing_bottom ">
-										
+
 
 					<span class="sr_right_late"><a href="tel:330299085050">+ 33 (0)2 99 08 50 50</a></span>
 					<span class="sr_right">Resa.hotel@yrnet.com</span>
@@ -181,7 +172,9 @@ and open the template in the editor.
 							<div class="clear"></div>
 
 							<div class="home_main_section_block_infos_action">
-								<div class="home_main_section_block_infos_action_button">En savoir plus</div>
+								<div class="home_main_section_block_infos_action_button button--nina" data-text="En savoir plus">
+									<span>E</span><span>n</span> <span>s</span><span>a</span><span>v</span><span>o</span><span>i</span><span>r</span> <span>p</span><span>l</span><span>u</span><span>s</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -210,7 +203,10 @@ and open the template in the editor.
 							<div class="clear"></div>
 
 							<div class="home_main_section_block_infos_action">
-								<div class="home_main_section_block_infos_action_button">En savoir plus</div>
+								<div class="home_main_section_block_infos_action_button button--nina" data-text="En savoir plus">
+									<!-- juste pour le test.. -->
+									<span>E</span><span>n</span> <span>s</span><span>a</span><span>v</span><span>o</span><span>i</span><span>r</span> <span>p</span><span>l</span><span>u</span><span>s</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -241,7 +237,9 @@ and open the template in the editor.
 							<div class="clear"></div>
 
 							<div class="home_main_section_block_infos_action">
-								<div class="home_main_section_block_infos_action_button">Tous nos coffrets cadeaux</div>
+								<div class="home_main_section_block_infos_action_button button--nina"data-text="Tous nos coffrets cadeaux">
+									<span>T</span><span>o</span><span>u</span><span>s</span> <span>n</span><span>o</span><span>s</span> <span>c</span><span>o</span><span>f</span><span>f</span><span>r</span><span>e</span><span>t</span><span>s</span> <span>c</span><span>a</span><span>d</span><span>e</span><span>a</span><span>u</span><span>x</span>
+								</div>
 							</div>
 						</div>
 					</div>
