@@ -27,44 +27,44 @@ html, body
 // C'est moche mais je sais pas quoi faire .. :'( 
 .preloading
 {
-	position: fixed;
-	top: 0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index: 10000000;
-	background-image: url('resources/img/accueil.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	transition:			all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
-	-webkit-transition:	all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
-	display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	position:					fixed;
+	top:						0;
+	left:						0;
+	right:						0;
+	bottom:						0;
+	z-index:					10000000;
+	background-image:			url('resources/img/accueil.jpg');
+	background-size:			cover;
+	background-repeat:			no-repeat;
+	transition:					all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition:			all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+	display:					-ms-flexbox;
+    display:					-webkit-flex;
+    display:					flex;
+    -webkit-flex-direction:		column;
+    -ms-flex-direction:			column;
+    flex-direction:				column;
+    -webkit-flex-wrap:			wrap;
+    -ms-flex-wrap:				wrap;
+    flex-wrap:					wrap;
+    -webkit-justify-content:	center;
+    -ms-flex-pack:				center;
+    justify-content:			center;
+    -webkit-align-content:		stretch;
+    -ms-flex-line-pack:			stretch;
+    align-content:				stretch;
+    -webkit-align-items:		center;
+    -ms-flex-align:				center;
+    align-items:				center;
 	
 	h1
 	{
-		text-transform: uppercase;
-		font-size: 24px;
-		margin-bottom: 24px;
-		color: #fff;
-		font-family: "brandon_grotesquelight";
-		text-shadow: 1px 1px #000;
+		text-transform:	uppercase;
+		font-size:		24px;
+		margin-bottom:	24px;
+		color:			#fff;
+		font-family:	"brandon_grotesquelight";
+		text-shadow:	1px 1px #000;
 	}
 	
 }
@@ -226,20 +226,22 @@ img
 }
 
 
-.button--nina {
-	padding: 0 2em;
+.button--nina
+{
+	padding:						0 2em;
 	/*background: #7986cb;*/
-	color: #fff;
-	overflow: hidden;
-	-webkit-transition: background-color 0.3s;
-	transition: background-color 0.3s;
-	position: relative;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
+	color:							#fff;
+	overflow:						hidden;
+	-webkit-transition:				background-color 0.3s;
+	transition:						background-color 0.3s;
+	position:						relative;
+	-webkit-backface-visibility:	hidden;
+	-moz-osx-font-smoothing:		grayscale;
 
 }
 
-.button--nina > span {
+.button--nina > span 
+{
 	display: inline-block;
 	opacity: 0;
 	color: #fff;
@@ -250,7 +252,8 @@ img
 	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
-.button--nina::before {
+.button--nina::before 
+{
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -263,104 +266,129 @@ img
 	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
-.button--nina:hover {
+.button--nina:hover 
+{
 	background-color: #3f51b5;
 }
-.button--nina:hover::before {
+.button--nina:hover::before 
+{
 	opacity: 0;
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 }
-.button--nina:hover > span {
+.button--nina:hover > span 
+{
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-.button--nina:hover > span:nth-child(1) {
+.button--nina:hover > span:nth-child(1) 
+{
 	-webkit-transition-delay: 0.045s;
 	transition-delay: 0.045s;
 }
-.button--nina:hover > span:nth-child(2) {
+.button--nina:hover > span:nth-child(2) 
+{
 	-webkit-transition-delay: 0.09s;
 	transition-delay: 0.09s;
 }
-.button--nina:hover > span:nth-child(3) {
+.button--nina:hover > span:nth-child(3) 
+{
 	-webkit-transition-delay: 0.135s;
 	transition-delay: 0.135s;
 }
-.button--nina:hover > span:nth-child(4) {
+.button--nina:hover > span:nth-child(4)
+{
 	-webkit-transition-delay: 0.18s;
 	transition-delay: 0.18s;
 }
-.button--nina:hover > span:nth-child(5) {
+.button--nina:hover > span:nth-child(5) 
+{
 	-webkit-transition-delay: 0.225s;
 	transition-delay: 0.225s;
 }
-.button--nina:hover > span:nth-child(6) {
+.button--nina:hover > span:nth-child(6) 
+{
 	-webkit-transition-delay: 0.27s;
 	transition-delay: 0.27s;
 }
-.button--nina:hover > span:nth-child(7) {
+.button--nina:hover > span:nth-child(7) 
+{
 	-webkit-transition-delay: 0.315s;
 	transition-delay: 0.315s;
 }
-.button--nina:hover > span:nth-child(8) {
+.button--nina:hover > span:nth-child(8)
+{
 	-webkit-transition-delay: 0.36s;
 	transition-delay: 0.36s;
 }
-.button--nina:hover > span:nth-child(9) {
+.button--nina:hover > span:nth-child(9) 
+{
 	-webkit-transition-delay: 0.405s;
 	transition-delay: 0.405s;
 }
-.button--nina:hover > span:nth-child(10) {
+.button--nina:hover > span:nth-child(10)
+{
 	-webkit-transition-delay: 0.495s;
 	transition-delay: 0.495s;
 }
-.button--nina:hover > span:nth-child(11) {
+.button--nina:hover > span:nth-child(11)
+{
 	-webkit-transition-delay: 0.54s;
 	transition-delay: 0.54s;
 }
-.button--nina:hover > span:nth-child(12) {
+.button--nina:hover > span:nth-child(12) 
+{
 	-webkit-transition-delay: 0.585s;
 	transition-delay: 0.585s;
 }
-.button--nina:hover > span:nth-child(13) {
+.button--nina:hover > span:nth-child(13) 
+{
 	-webkit-transition-delay: 0.63s;
 	transition-delay: 0.63s;
 }
-.button--nina:hover > span:nth-child(14) {
+.button--nina:hover > span:nth-child(14) 
+{
 	-webkit-transition-delay: 0.675s;
 	transition-delay: 0.675s;
 }
-.button--nina:hover > span:nth-child(15) {
+.button--nina:hover > span:nth-child(15) 
+{
 	-webkit-transition-delay: 0.72s;
 	transition-delay: 0.72s;
 }
-.button--nina:hover > span:nth-child(16) {
+.button--nina:hover > span:nth-child(16) 
+{
 	-webkit-transition-delay: 0.765s;
 	transition-delay: 0.765s;
 }
-.button--nina:hover > span:nth-child(17) {
+.button--nina:hover > span:nth-child(17) 
+{
 	-webkit-transition-delay: 0.795s;
 	transition-delay: 0.795s;
 }
-.button--nina:hover > span:nth-child(18) {
+.button--nina:hover > span:nth-child(18) 
+{
 	-webkit-transition-delay: 0.84s;
 	transition-delay: 0.84s;
 }
-.button--nina:hover > span:nth-child(19) {
+.button--nina:hover > span:nth-child(19) 
+{
 	-webkit-transition-delay: 0.885s;
 	transition-delay: 0.885s;
 }
-.button--nina:hover > span:nth-child(20) {
+.button--nina:hover > span:nth-child(20) 
+{
 	-webkit-transition-delay: 0.93s;
 	transition-delay: 0.93s;
 }
-.button--nina:hover > span:nth-child(21) {
+.button--nina:hover > span:nth-child(21) 
+{
 	-webkit-transition-delay: 0.975s;
 	transition-delay: 0.975s;
 }
-.button--nina:hover > span:nth-child(22) {
+.button--nina:hover > span:nth-child(22) 
+{
 	-webkit-transition-delay: 1.02s;
 	transition-delay: 1.02s;
 }
