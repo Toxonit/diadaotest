@@ -770,9 +770,24 @@ img {
             margin-bottom: 12px;
             font-family: 'linotype_didotroman'; }
           .commons_content .home_main .home_main_section_block .home_main_section_block_infos .home_main_section_block_infos_top .home_main_section_block_infos_special {
-            font-size: 11px;
+            font-size: 12px;
             font-family: 'roboto';
             font-weight: 300; }
+            .commons_content .home_main .home_main_section_block .home_main_section_block_infos .home_main_section_block_infos_top .home_main_section_block_infos_special .divspan {
+              float: none;
+              display: inline-block;
+              width: 50%;
+              padding-left: 12px;
+              position: relative; }
+            .commons_content .home_main .home_main_section_block .home_main_section_block_infos .home_main_section_block_infos_top .home_main_section_block_infos_special .divspan::before {
+              position: absolute;
+              left: 0;
+              top: 4px;
+              content: ' ';
+              border-radius: 50%;
+              background-color: #574318;
+              width: 4px;
+              height: 4px; }
           .commons_content .home_main .home_main_section_block .home_main_section_block_infos .home_main_section_block_infos_top .home_main_section_block_infos_subtitle {
             font-size: 11px;
             font-family: 'roboto';

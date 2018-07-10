@@ -1061,9 +1061,28 @@ img
 					}
 					.home_main_section_block_infos_special
 					{
-						font-size:		11px;
+						font-size:		12px;
 						font-family:	'roboto';
 						font-weight:	300;
+						.divspan
+						{
+							float: left;
+							display: inline-block;
+							width: 50%;
+							padding-left: 12px;
+							position: relative;
+						}
+						.divspan::before
+						{
+							position: absolute;
+							left: 0;
+							top: 4px;
+							content: ' ';
+							border-radius: 50%;
+							background-color: #574318;
+							width: 4px;
+							height: 4px;
+						}
 
 					}
 					.home_main_section_block_infos_subtitle
