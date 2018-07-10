@@ -865,9 +865,10 @@ img
 						background-repeat:		no-repeat;
 						background-position:	100% 0;*/
 			position:				relative;
-			min-height:				110vh;
+			min-height:				85vh;
 			margin-bottom:			148px !important;
-			position:			relative;
+			position:				relative;
+			
 			.section_inner_text
 			{
 				text-align: left;
@@ -905,16 +906,19 @@ img
 
 			.section2_bkg
 			{
-				position:	absolute;
-				right:		50px;
-				top:		0%;
-				z-index:	1;
+				position: relative;
+				right: 0;
+				top: 0%;
+				z-index: 1;
+				left: auto;
+				text-align: right;
 			}
 		} 
 
 		.section_classic
 		{
 			margin:						0 auto;
+			
 			span
 			{
 				display: block;
@@ -1448,12 +1452,12 @@ and (max-width : 1200px)
 		position:	static;
 		height: 100px;
 	}
-	.commons_content .home_main .section2 .section2_bkg {
+/*	.commons_content .home_main .section2 .section2_bkg {
 		position: absolute;
 		right: 0;
 		top: 0%;
 		z-index: 1;
-	}
+	}*/
 	.testt
 	{
 		float: left;
