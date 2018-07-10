@@ -1,5 +1,6 @@
 /****************************
  * Generic (oui j'aime les flexboxs!)
+Il manque aussi le trait avec la puce, mais c'est pas top avec l'effet d'apparition
  ****************************/
 @import url(resources/fonts/webfont/stylesheet.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
@@ -978,7 +979,7 @@ img {
   display: block; }
 
 .mm-menu {
-  background: #f9f9f9 !important;
+  background: #f7f9f0 !important;
   border-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75); }
 
