@@ -1,5 +1,6 @@
 /****************************
  * Generic (oui j'aime les flexboxs!)
+Il manque aussi le trait avec la puce, mais c'est pas top avec l'effet d'apparition
  ****************************/
 @import "resources/fonts/webfont/stylesheet.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
@@ -456,7 +457,6 @@ img
 		top:					0;
 		left:					0;
 		right:					0;
-		height:					80px;
 		background-color:		#f7f9f0;
 		z-index:				1000000;			
 
@@ -465,25 +465,25 @@ img
 		/****************************Logo****************************/
 		.commons_header_logos
 		{
-			padding:	6px;
-			float: left;
+			padding:	12px 24px;
+			float:		left;
 
 
 			.commons_header_logo_first
 			{
-				width: 100px;
+				width: 120px;
 			}
 
 			.commons_header_logo_last
 			{
-				width: 120px;
+				width: 175px;
 			}
 		}
 
 		/****************************Menu****************************/
 		.commons_header_menu
 		{
-			float: right;
+			float:						right;
 			padding:					24px;
 			display:					-ms-flexbox;
 			display:					-webkit-flex;
@@ -503,6 +503,11 @@ img
 			-webkit-align-items:		center;
 			-ms-flex-align:				center;
 			align-items:				center;
+			bottom: 0;
+			top: 0;
+			position: absolute;
+			height: 100%;
+			right: 0;
 
 
 			.commons_header_menu_mobile
@@ -537,9 +542,9 @@ img
 					a:visited
 					{
 					color:				#574318;
-					margin-left:		12px;
+					margin-left:		16px;
 					text-transform:		uppercase;
-					font-size:			12px;
+					font-size:			16px;
 					font-family:		'brandon_grotesquemedium';
 				}
 
@@ -565,11 +570,30 @@ img
 	/********************************************************
 	* Landing
    ********************************************************/
+	.commons_content .home_main
+	{
+		position: relative;
+	}
+	
+	.home_main::before
+	{
+		content: ' ';
+		position: absolute;
+		width: 1px;
+		height: 400px;
+		left: 50%;
+		top: -200px;
+		background-color: rgba(175,175,175,0.6);
+	}
+	
+	
+	
+	
 	.home_landing
 	{
 		height:			calc(100vh);
 		position:		relative;
-		padding-top:	80px;
+		padding-top:	120px;
 		background:		transparent;
 
 		// pas obligé ..
@@ -763,7 +787,7 @@ img
 	.home_main
 	{
 		min-height:			100vh;
-		padding-top:		80px;
+		padding-top:		200px;
 		background-image:	url("resources/img/bubbles.jpg");
 		background-size:	cover;
 		background-repeat:	no-repeat;
@@ -791,7 +815,7 @@ img
 			max-width:			1400px;
 			position:			relative;
 			min-height:			70vh;
-			margin-bottom:		48px !important;
+			margin-bottom:		148px !important;
 		
 			.section_inner_text
 			{
@@ -1153,10 +1177,22 @@ img
 			margin-right: 0;
 			.commons_footer_rs_search
 			{
+			position: relative;
 				input
 				{
-					padding: 6px;
+					padding: 10px 7px ;
 					margin-top: 6px;
+					padding-right: 32px;
+				}
+				.commons_footer_rs_search_button
+				{
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					right: 6px;
+					border: 1px solid  #ccc;
+					top: 13px;
+					cursor:pointer;
 				}
 			}
 		}
@@ -1303,6 +1339,7 @@ img
 	float:			left;
 	transition:		all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 	-webkit-transition:all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+	    margin-right: 24px;
 
 }
 .burger:before,
@@ -1375,6 +1412,17 @@ and (max-width : 1400px)
 	{
 
 	}
+	.commons_content .commons_header .commons_header_menu .commons_header_menu_classic a:link,
+	.commons_content .commons_header .commons_header_menu .commons_header_menu_classic a:hover,
+	.commons_content .commons_header .commons_header_menu .commons_header_menu_classic a:active,
+	.commons_content .commons_header .commons_header_menu .commons_header_menu_classic a:visited 
+	{
+		color: #574318;
+		margin-left: 12px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: 'brandon_grotesquemedium';
+	}
 }
 @media only screen
 and (max-width : 1200px) 
@@ -1382,6 +1430,7 @@ and (max-width : 1200px)
 	.commons_content .home_main .section1 .section1_bkg
 	{
 		right: 40%;
+		position: absolute;
 	}
 	.mobile
 	{
@@ -1395,8 +1444,14 @@ and (max-width : 1200px)
 	{
 		display:	block;
 		position:	static;
+		height: 100px;
 	}
-
+	.commons_content .home_main .section2 .section2_bkg {
+		position: absolute;
+		right: 0;
+		top: 0%;
+		z-index: 1;
+	}
 	.testt
 	{
 		float: left;
